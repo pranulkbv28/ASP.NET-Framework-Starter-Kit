@@ -4,6 +4,10 @@
 - Blazor is a feature of ASP`.NET`, the popular web development framework that extends the `.NET` developer platform with tools and libraries for building web apps.
 - Blazor is a single-page app framework for building interactive **client-side** web apps with `.NET`.
 
+## Pre-requisites
+
+- **.NET SDK**: Blazor requires the .NET Core SDK to build and run Blazor apps. You can download the .NET Core SDK from the official .NET website. [Download from here](https://dotnet.microsoft.com/en-us/download)
+
 ## Features of Blazor
 
 - **Razor Components**: Blazor uses Razor Components to build the UI components of the application.
@@ -50,3 +54,41 @@
 ### Components of Blazor
 
 ![Components of Blazor](../assets/componentsOfBlazor.png)
+
+## How to Run Blazor Application
+
+1. First check your .NET SDK version by running the following command in the terminal.
+
+    ```bash
+    dotnet --version
+    ```
+
+2. Check if you have the Blazor template installed by running the following command.
+
+    ```bash
+    dotnet new list
+    ```
+
+    - if you do not have the Blazor template installed, you can install it by running the following command.
+
+        ```bash
+        dotnet new -i Microsoft.AspNetCore.Blazor.Templates
+        ```
+
+3. Create a new Blazor project by running the following command.
+
+    - For `Blazor WebAssembly App`
+
+        ```bash
+        dotnet new blazorwasm -o BlazorApp
+        ```
+
+    - For `Blazor Server App`
+
+        ```bash
+        dotnet new blazorserver -o BlazorApp
+        ```
+
+### Important tip
+
+- Check the [.gitignore](../) file in the root directory to see the files that are needed to be ignored by git.

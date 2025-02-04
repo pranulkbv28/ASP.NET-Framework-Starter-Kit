@@ -1,0 +1,28 @@
+.vscode/
+
+# Ignore npm packages
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore publish outputs
+wwwroot/
+
+# Ignore environment settings
+.env
+.env.*
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore coverage reports
+coverage/
+
+# Ignore dependency directories
+packages/
+
+# Ignore build output directories
+bin/
+obj/
