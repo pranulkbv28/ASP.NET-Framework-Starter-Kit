@@ -1,0 +1,15 @@
+﻿@page "/testapiurl"
+@inject MyBlazorApp.Services.ApiService ApiService
+
+<h3>TestApiUrl</h3>
+
+<p>TestApiUrl Url: @apiUrl</p>
+
+@code {
+    private string? apiUrl;
+
+    protected override void OnInitialized()
+    {
+        apiUrl = ApiService.GetApiUrl();
+    }
+}
