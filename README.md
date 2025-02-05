@@ -4,6 +4,7 @@
 - **Prerequisited Knowledge**:
   - Basic knowledge of `C#` programming language.
   - Basic knowledge of `HTML`, `CSS`, and `JavaScript`.
+  - `.NET SDK` installed on your machine.
 
 ## Table of Contents
 
