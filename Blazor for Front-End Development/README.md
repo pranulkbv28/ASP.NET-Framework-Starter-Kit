@@ -118,5 +118,6 @@
 - Creating am `appsettings.json` file is important to store the configuration settings for the application.
   - If it is a Blazor Server App, the `appsettings.json` file is created by default. [Check Here](./!Test%20App/MyBlazorServerApp/).
   - If it is a Blazor WebAssembly App, you can create the `appsettings.json` file in the `wwwroot` folder. [Check Here](./!Test%20App/MyBlazorApp/wwwroot/).
+  - [Check Here to see how to get the details of your configuration settings](./!Test%20App/MyBlazorApp/Services/ApiService.cs)
 
 - If you create a new `Service` or any new `classes`, you will have to **initalize** them in the `Program.cs` file. [Check Here](./!Test%20App/MyBlazorApp/Program.cs) or here [Check Here](./!Test%20App/MyBlazorServerApp/Program.cs).
