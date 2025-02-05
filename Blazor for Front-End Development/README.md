@@ -86,9 +86,37 @@
     - For `Blazor Server App`
 
         ```bash
-        dotnet new blazorserver -o BlazorApp
+        dotnet new blazorserver -o <Blazor App Name>
         ```
+
+4. Run the Blazor application by running the following command.
+
+    ```bash
+    cd <Blazor App Name>
+    dotnet run  # this should be done in the same directory where the .csproj file is located.
+    ```
 
 ### Important tip
 
 - Check the [.gitignore](../) file in the root directory to see the files that are needed to be ignored by git.
+- After creating a project, you can run the following command to add the `.gitignore` file to your project.
+
+    ```bash
+    dotnet new gitignore
+    ```
+
+- Create a .sln file for your project by running the following command and add the projects to the solution file.
+
+    ```bash
+    dotnet new sln -n <Solution Name>
+    dotnet sln add <Path to the .csproj file>
+    ```
+
+  - This is an import step to make sure you do not have any errors.
+  - This step is important if you want to add multiple projects to a single solution and also to run the projects together.
+
+- Creating am `appsettings.json` file is important to store the configuration settings for the application.
+  - If it is a Blazor Server App, the `appsettings.json` file is created by default. [Check Here](./!Test%20App/MyBlazorServerApp/).
+  - If it is a Blazor WebAssembly App, you can create the `appsettings.json` file in the `wwwroot` folder. [Check Here](./!Test%20App/MyBlazorApp/wwwroot/).
+
+- If you create a new `Service` or any new `classes`, you will have to **initalize** them in the `Program.cs` file. [Check Here](./!Test%20App/MyBlazorApp/Program.cs) or here [Check Here](./!Test%20App/MyBlazorServerApp/Program.cs).
