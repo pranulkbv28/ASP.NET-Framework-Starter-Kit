@@ -94,6 +94,8 @@
     ```bash
     cd <Blazor App Name>
     dotnet run  # this should be done in the same directory where the .csproj file is located.
+    # or for hot reload
+    dotnet watch run
     ```
 
 ### Important tip
