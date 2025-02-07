@@ -10,9 +10,14 @@
 
 @code {
     private int currentCount = 0;
+    [Inject] private IJSRuntime? JSRuntime { get; set; }
 
-    private void IncrementCount()
+    private async Task IncrementCount()
     {
         currentCount++;
+        if (JSRuntime != null)
+        {
+            await JSRuntime.InvokeVoidAsync("logToConsole", $"Current count: {currentCount}");
+        }
     }
 }
