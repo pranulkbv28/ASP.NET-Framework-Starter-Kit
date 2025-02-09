@@ -1,0 +1,20 @@
+﻿@page "/message-component"
+
+<PageTitle>Message Component</PageTitle>
+
+<h3>@message</h3>
+
+<button @onclick="ChangeMessage">Click Me</button>
+
+<MyBlazorApp.Components.NewComponent Title="My Title"></MyBlazorApp.Components.NewComponent>
+
+@code {
+
+    private string message = "Hello, Blazor";
+
+    private void ChangeMessage()
+    {
+        message = "Button Clicked!";
+    }
+
+}
