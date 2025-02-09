@@ -15,6 +15,7 @@
     private async Task IncrementCount()
     {
         currentCount++;
+        Console.WriteLine(currentCount);
         if (JSRuntime != null)
         {
             await JSRuntime.InvokeVoidAsync("logToConsole", $"Current count: {currentCount}");
